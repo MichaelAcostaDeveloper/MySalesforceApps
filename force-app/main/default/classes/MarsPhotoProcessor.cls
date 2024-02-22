@@ -7,17 +7,25 @@
 **/
 public with sharing class MarsPhotoProcessor {
     public static List<Photo> processMarsPhoto(String jsonString) {
-        Map<String, Object> deserializedMap = (Map<String, Object>) JSON.deserializeUntyped(jsonString);
-        System.debug('Mapa deserializado: '+deserializedMap);
 
-        List<Object> listPhotosAny = (List<Object>) deserializedMap.get('photos');
+        //Casteo del string JSON a un Map especifico <String, Object>
+        Map<String, Object> mapDeserealizado = (Map<String, Object>) JSON.deserializeUntyped(jsonString);//-> Transforma String a Lista de datos primitivos.
+        System.debug('Mapa deserializado: '+mapDeserealizado);
+
+        //Casteo del value del MAP deserializado que tiene la key 'photos' a una la lista de Objects
+        List<Object> listPhotosAny = (List<Object>) mapDeserealizado.get('photos');
+
+        //Creación de Instancia de una lista de objeto Photo
         List<Photo> listPhotos = new List<Photo>();
+
+        //Iteración de la lista listPhotosAny
         for (Object obj : listPhotosAny) {
-            Photo photo = (Photo) JSON.deserialize(JSON.serialize(obj), Photo.class);
+            Photo photo = (Photo) JSON.deserialize(JSON.serialize(obj), Photo.class);//-> Serialice: transforma Objects a String JSON
             listPhotos.add(photo);
         }
         System.debug('Lista de photos: '+listPhotos);
         return listPhotos;
+
     }
         //Definir la clase que representa la estructura JSON
         public class Photo{

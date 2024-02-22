@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>sol__c</fullName>
-    <description>Es el valor de sol</description>
+    <fullName>Fecha_de_lanzamiento__c</fullName>
     <externalId>false</externalId>
-    <label>Days of mission</label>
-    <length>30</length>
+    <label>Fecha de lanzamiento</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
-    <type>Text</type>
-    <unique>false</unique>
+    <type>Date</type>
 </CustomField>

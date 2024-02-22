@@ -14,6 +14,8 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Mars Robert Photos</label>
     <navType>Standard</navType>
+    <tabs>Mars_Photo__c</tabs>
+    <tabs>Rover__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>My_LWC_Apps_UtilityBar</utilityBar>
 </CustomApplication>
