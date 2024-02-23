@@ -1,0 +1,16 @@
+<!--
+  @author            : Fernando M. Acosta P.
+  @Equipo            : CRM
+  @last modified on  : 02-22-2024
+  @last modified by  : Fernando M. Acosta P.
+  @Descripción       : Componente LWC que lista las cámaras de cada rover.
+-->
+<template>
+    <lightning-select
+        name="camaras"
+        value={selectVal}
+        label="Select the camera that you want"
+        options={cameraOptions}
+        onchange={handleChange}>
+    </lightning-select>
+</template>

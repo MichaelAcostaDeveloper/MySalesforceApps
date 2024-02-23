@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Numero_de_dias_de_la_mision__c</fullName>
-    <description>El el valor max_sol.</description>
+    <description>El el valor max_sol, The most recent Martian sol from which photos exist</description>
     <externalId>false</externalId>
-    <label>Número de días de la misión</label>
+    <label>Días marcianos con fotos</label>
     <precision>18</precision>
     <required>false</required>
     <scale>0</scale>

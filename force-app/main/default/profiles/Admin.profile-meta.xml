@@ -102,6 +102,10 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <tabVisibilities>
+        <tab>Find_Mars_Photos</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Mars_Photo__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>

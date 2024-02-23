@@ -14,6 +14,7 @@
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Mars Robert Photos</label>
     <navType>Standard</navType>
+    <tabs>Find_Mars_Photos</tabs>
     <tabs>Mars_Photo__c</tabs>
     <tabs>Rover__c</tabs>
     <uiType>Lightning</uiType>

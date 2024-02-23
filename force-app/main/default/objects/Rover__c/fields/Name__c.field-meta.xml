@@ -3,7 +3,7 @@
     <fullName>Name__c</fullName>
     <description>Nombre del Rover</description>
     <externalId>false</externalId>
-    <label>Name</label>
+    <label>Name of the Rover</label>
     <length>40</length>
     <required>false</required>
     <trackHistory>false</trackHistory>

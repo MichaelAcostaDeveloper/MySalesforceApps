@@ -1,0 +1,16 @@
+<!--
+  @author            : Fernando M. Acosta P.
+  @Equipo            : CRM
+  @last modified on  : 02-22-2024
+  @last modified by  : Fernando M. Acosta P.
+  @Descripción       : Componente LWC que lista los rovers.
+-->
+<template>
+    <lightning-select
+        name="rovers"
+        value={selectVal}
+        label="Select the Rover you want"
+        options={RoverOptions}
+        onchange={handleChange}>
+    </lightning-select>
+</template>

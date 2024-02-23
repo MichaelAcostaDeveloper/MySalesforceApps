@@ -1,0 +1,15 @@
+.main{
+    display: flex;
+    justify-content: center;
+}
+.style-main{
+    border: 1px solid #215CA0;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    column-gap: 40px;
+    justify-content: center;
+    background-color: #EEF4FF;
+}

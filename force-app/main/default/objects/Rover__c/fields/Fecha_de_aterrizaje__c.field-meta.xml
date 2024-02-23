@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Fecha_de_aterrizaje__c</fullName>
     <externalId>false</externalId>
-    <label>Fecha de aterrizaje</label>
+    <label>Fecha de aterrizaje en Marte</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

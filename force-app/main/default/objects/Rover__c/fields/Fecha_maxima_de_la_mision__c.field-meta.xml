@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Fecha_maxima_de_la_mision__c</fullName>
-    <description>Es el valor max_date</description>
+    <description>Es el valor max_date, The most recent Earth date from which photos exist</description>
     <externalId>false</externalId>
-    <label>Fecha máxima de la misión</label>
+    <label>Fecha más reciente con fotos</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

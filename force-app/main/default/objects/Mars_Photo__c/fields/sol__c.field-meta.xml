@@ -3,7 +3,7 @@
     <fullName>sol__c</fullName>
     <description>Es el valor de sol</description>
     <externalId>false</externalId>
-    <label>Days of mission</label>
+    <label>Mars days of mission</label>
     <length>30</length>
     <required>false</required>
     <trackHistory>false</trackHistory>
