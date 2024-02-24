@@ -1,7 +1,7 @@
 /**
  * @author            : Fernando M. Acosta P.
  * @Equipo            : CRM
- * @last modified on  : 02-23-2024
+ * @last modified on  : 02-24-2024
  * @last modified by  : Fernando M. Acosta P.
  * @Descripción       : Componente o clase apex ...
 **/
@@ -9,7 +9,12 @@ import { LightningElement, api } from 'lwc';
 
 export default class CamaraNameSelector extends LightningElement {
     optionPerCamera;
-    cameraOptions;
+    cameraOptions = [
+        {
+            label: '--None--',
+            value: '',
+        }
+    ];
 
     @api optionSend(strMessage){
         this.optionPerCamera = strMessage;
@@ -110,8 +115,14 @@ export default class CamaraNameSelector extends LightningElement {
                     }
                 ];
                 break;
-        
             default:
+                console.log('switch>>>>',this.optionPerCamera);
+                this.cameraOptions = [
+                    {
+                        label: '--None--',
+                        value: '',
+                    }
+                ];
                 break;
         }
     }
@@ -120,5 +131,7 @@ export default class CamaraNameSelector extends LightningElement {
     selectVal = '';
     handleChange(event) {
         this.selectVal = event.detail.value;
+        console.log('valor seleccionado de camara: ',this.selectVal);
+        this.dispatchEvent(new CustomEvent('enviodata',{detail:this.selectVal}));
     }
 }
