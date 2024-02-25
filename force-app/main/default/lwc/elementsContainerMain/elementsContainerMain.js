@@ -5,11 +5,11 @@
  * @last modified by  : Fernando M. Acosta P.
  * @Descripción       : Componente o clase apex ...
 **/
-import { LightningElement } from 'lwc';
+import { LightningElement, track } from 'lwc';
 
 export default class ElementsContainerMain extends LightningElement {
     optionRover;
-    optionCamara;
+    @track optionCamara;
     martialSol;
     valuesToQuery = [];
 

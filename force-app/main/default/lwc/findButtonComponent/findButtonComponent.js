@@ -5,20 +5,28 @@
  * @last modified by  : Fernando M. Acosta P.
  * @Descripción       : Componente o clase apex ...
 **/
-import { LightningElement, api } from 'lwc';
+import { LightningElement, api, track } from 'lwc';
 
 export default class FindButtonComponent extends LightningElement {
     @api receivedArray;
     arrayValuesString;
+    @track newArray = [];
     handleQuery() {
         this.arrayValuesString = JSON.stringify(this.receivedArray); // esto sirve para pasar a String
-        console.log(this.receivedArray);
-        console.log(this.receivedArray.length);
         if (this.receivedArray && this.receivedArray.length) {
-            console.log('ARRAY PARA QUERY', this.receivedArray.join(', '));
+            console.log('SIZE DEL ARRAY: ',this.receivedArray.length);
+            console.log('ARRAY OBTENIDO: ', this.receivedArray.join(', '));
+            console.log('ARRAY PARA ITERAR: ', this.receivedArray);
+            this.receivedArray.forEach((element, index) => {
+                if (index === 0 || index === 1 || index === this.receivedArray.length - 1) {
+                    console.log(element);
+                    this.newArray.push(element);
+                }
+            });
+            console.log('CLEAN ARRAY: ',this.newArray);
+            console.log('CLEAN ARRAY: ',this.newArray.join(', '));
         } else {
             console.log('No existen registros');
-
         }
     }
 

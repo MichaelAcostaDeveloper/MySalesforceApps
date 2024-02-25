@@ -1,16 +1,17 @@
 /**
  * @author            : Fernando M. Acosta P.
  * @Equipo            : CRM
- * @last modified on  : 02-21-2024
+ * @last modified on  : 02-25-2024
  * @last modified by  : Fernando M. Acosta P.
  * @Descripción       : Clase apex para consumir API de Mars Photos
 **/
 public with sharing class MarsPhotoCallout {
-    public static void obtainNasaMarsPhotos(){
+    public static void obtainNasaMarsPhotos(String nameRover, String nameCamera, String numSol){
         try {
             HttpRequest req = new HttpRequest();
-            req.setEndpoint('Callout:MarsPhotos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY');
+            req.setEndpoint('Callout:MarsPhotos/rovers/'+nameRover+'/photos?api_key=DEMO_KEY&camera='+nameCamera+'&sol='+numSol);
             req.setMethod('GET');
+            
 
             Http http = new Http();
             HTTPResponse res = http.send(req);

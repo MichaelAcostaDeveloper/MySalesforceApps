@@ -8,11 +8,10 @@
 import { LightningElement } from 'lwc';
 
 export default class NumberDaySelector extends LightningElement {
-    amount = 0;
 
     handleAmountChange(e) {
-        this.amount = e.detail.value;
-        console.log('Valor de martian sol en CHILD: ',this.amount);
-        this.dispatchEvent(new CustomEvent('sendsol',{detail:this.amount}));
+        const amount = e.detail.value;
+        console.log('Valor de martian sol en CHILD: ',amount);
+        this.dispatchEvent(new CustomEvent('sendsol',{detail:amount}));
     }
 }
