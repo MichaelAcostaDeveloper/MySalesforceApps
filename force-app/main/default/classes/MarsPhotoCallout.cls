@@ -1,11 +1,12 @@
 /**
  * @author            : Fernando M. Acosta P.
  * @Equipo            : CRM
- * @last modified on  : 02-25-2024
+ * @last modified on  : 03-03-2024
  * @last modified by  : Fernando M. Acosta P.
  * @Descripción       : Clase apex para consumir API de Mars Photos
 **/
 public with sharing class MarsPhotoCallout {
+    @AuraEnabled
     public static void obtainNasaMarsPhotos(String nameRover, String nameCamera, String numSol){
         try {
             HttpRequest req = new HttpRequest();
@@ -52,12 +53,12 @@ public with sharing class MarsPhotoCallout {
                 }
                 try {
                     //Inserción de objetos Rover__c
-                    upsert listRover Id;
+                    // upsert listRover Id;
     
-                    //Obtener los ID de los objetos Rover__c insertados
-                    for (Integer i = 0; i < listRover.size(); i++) {
-                        listMarsPhoto[i].Rover__c = listRover[i].Id;
-                    }
+                    // //Obtener los ID de los objetos Rover__c insertados
+                    // for (Integer i = 0; i < listRover.size(); i++) {
+                    //     listMarsPhoto[i].Rover__c = listRover[i].Id;
+                    // }
     
                     //Insertar los objetos Mars_Photo__c con los IDs de Rover__c asociados
                     upsert listMarsPhoto Id;
