@@ -1,9 +1,9 @@
 /**
  * @author            : Fernando M. Acosta P.
  * @Equipo            : CRM
- * @last modified on  : 02-22-2024
+ * @last modified on  : 03-20-2024
  * @last modified by  : Fernando M. Acosta P.
- * @Descripción       : Componente o clase apex ...
+ * @Descripción       : Componente LWC para seleccionar los rovers.
 **/
 import { LightningElement } from 'lwc';
 

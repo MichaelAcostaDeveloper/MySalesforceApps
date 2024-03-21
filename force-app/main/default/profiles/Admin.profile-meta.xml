@@ -114,7 +114,7 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <userLicense>Salesforce</userLicense>
-    <userPermissions>
+    <!-- <userPermissions>
         <enabled>true</enabled>
         <name>AIViewInsightObjects</name>
     </userPermissions>
@@ -853,5 +853,5 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>WorkCalibrationUser</name>
-    </userPermissions>
+    </userPermissions> -->
 </Profile>

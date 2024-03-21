@@ -1,9 +1,9 @@
 /**
  * @author            : Fernando M. Acosta P.
  * @Equipo            : CRM
- * @last modified on  : 02-24-2024
+ * @last modified on  : 03-20-2024
  * @last modified by  : Fernando M. Acosta P.
- * @Descripción       : Componente o clase apex ...
+ * @Descripción       : Componente LWC padre que contiene a: roverNameSelector, camaraNameSelector, numberDaySelector, botón de búsqueda, botón de eliminación
 **/
 import { LightningElement, track } from 'lwc';
 

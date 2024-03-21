@@ -1,9 +1,9 @@
 /**
  * @author            : Fernando M. Acosta P.
  * @Equipo            : CRM
- * @last modified on  : 03-19-2024
+ * @last modified on  : 03-20-2024
  * @last modified by  : Fernando M. Acosta P.
- * @Descripción       : Componente o clase apex ...
+ * @Descripción       : Componente LWC que realiza la query a la API de la NASA.
 **/
 import { LightningElement, api, track} from 'lwc';
 import getMarsPhotos from '@salesforce/apex/MarsPhotoCallout.obtainNasaMarsPhotos';

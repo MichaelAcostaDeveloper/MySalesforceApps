@@ -1,9 +1,9 @@
 /**
  * @author            : Fernando M. Acosta P.
  * @Equipo            : CRM
- * @last modified on  : 02-24-2024
+ * @last modified on  : 03-20-2024
  * @last modified by  : Fernando M. Acosta P.
- * @Descripción       : Componente o clase apex ...
+ * @Descripción       : Componente LWC que lista las cámaras de los rovers.
 **/
 import { LightningElement, api } from 'lwc';
 
