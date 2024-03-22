@@ -1,0 +1,39 @@
+<!--
+  @author            : Fernando M. Acosta P.
+  @Equipo            : CRM
+  @last modified on  : 03-22-2024
+  @last modified by  : Fernando M. Acosta P.
+  @Descripción       : Componente lwc para mostrar una PHOTO
+-->
+<!-- <template>
+    <lightning-card title="Mars Photos" icon-name="custom:custom63">
+      <div class="slds-m-around_medium">
+        <template lwc:if={mPhotos.data}>
+          <template for:each={mPhotos.data} for:item="m">
+            <p key={m.Id}>{m.Name}</p>
+            <p key={m.Id}>{m.Earth_date__c}</p>
+            <p key={m.Id}>{m.sol__c}</p>
+          </template>
+        </template>
+      </div>
+    </lightning-card>
+</template> -->
+
+
+<template>
+    <lightning-card title="Mars Photo Gallery" icon-name="custom:custom63">
+        <div class="slds-grid slds-wrap">
+            <template for:each={customPhotos} for:item="customPhoto">
+                <div key={customPhoto.Id} class="photo-container">
+                    <div class = 'data-container'>
+                        <img src={customPhoto.Image__c} alt={customPhoto.Name} />
+                        <p>Código de la imagen: {customPhoto.Name}</p>
+                        <p>Fecha terrestre de despegue: {customPhoto.Earth_date__c}</p>
+                        <p>Fecha marciana: {customPhoto.sol__c}</p>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#FF5C3C</headerColor>
+        <logo>marte</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>This App shows all NASA&apos;s photographies of Robert robot in Mars.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Mars Robert Photos</label>
+    <navType>Standard</navType>
+    <tabs>Find_Mars_Photos</tabs>
+    <tabs>Mars_Photo__c</tabs>
+    <tabs>Rover__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>My_LWC_Apps_UtilityBar</utilityBar>
+</CustomApplication>

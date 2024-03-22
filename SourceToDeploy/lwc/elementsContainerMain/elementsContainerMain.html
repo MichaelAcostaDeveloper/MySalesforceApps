@@ -1,0 +1,18 @@
+<!--
+  @author            : Fernando M. Acosta P.
+  @Equipo            : CRM
+  @last modified on  : 02-24-2024
+  @last modified by  : Fernando M. Acosta P.
+  @Descripción       : Componente LWC padre que contiene a: roverNameSelector, camaraNameSelector, numberDaySelector, botón de búsqueda, botón de eliminación
+-->
+<template>
+  <div class="main">
+    <div class="style-main">
+      <c-rover-name-selector onsenddata = {handleSelectionRover}></c-rover-name-selector>
+      <c-camara-name-selector onenviodata = {handleSelectionCamara} ></c-camara-name-selector>
+      <c-number-day-selector onsendsol = {handleSelectionMartialSol}></c-number-day-selector>
+      <c-find-button-component received-array = {valuesToQuery}></c-find-button-component>
+      <c-delete-button-component></c-delete-button-component>
+    </div>
+  </div>
+</template>
